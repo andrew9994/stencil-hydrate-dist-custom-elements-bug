@@ -21,7 +21,8 @@
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "hydrate": "node hydrate-index.js"
   },
   "dependencies": {
     "@stencil/core": "^4.7.0"
