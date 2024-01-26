@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/stencil-hydrate-dist-custom-elements-bug.esm.js"></script>
-    <script nomodule src="/build/stencil-hydrate-dist-custom-elements-bug.js"></script>
+    <script type="module">
+      import { defineCustomElement } from "/components/my-component.js";
+      defineCustomElement();
+    </script>
   </head>
   <body>
     <my-component>Button label</my-component>

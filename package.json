@@ -22,7 +22,9 @@
     "build": "stencil build",
     "start": "stencil build --watch --serve",
     "generate": "stencil generate",
-    "hydrate": "node hydrate-index.js"
+    "hydrate": "node hydrate-index.js",
+    "copy": "rsync -r dist/components www",
+    "hydrate:copy": "npm run hydrate && npm run copy"
   },
   "dependencies": {
     "@stencil/core": "^4.7.0"
