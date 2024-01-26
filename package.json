@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "stencil build",
-    "start": "stencil build --dev --watch --serve",
+    "start": "stencil build --watch --serve",
     "generate": "stencil generate",
     "hydrate": "node hydrate-index.js"
   },
