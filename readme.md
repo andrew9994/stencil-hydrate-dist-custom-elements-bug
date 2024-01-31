@@ -32,3 +32,43 @@ The difference on the client-side hydration can be now observed between
 
 - not hydrated document - `http://localhost:3333`
 - on the server hydrated document - `http://localhost:3333/ssr`
+
+## Try the fix locally
+
+Clone the forked repository
+
+```bash
+git clone https://github.com/andrew9994/stencil.git
+```
+
+cd into stencil
+
+```bash
+cd stencil
+```
+
+Switch to the fix branch
+
+```bash
+git checkout fix/dist-custom-elements-ssr
+```
+
+Install the dependencies and build
+
+```bash
+npm install
+npm run install.jest
+npm run build
+```
+
+After build link the @stencil/core package
+
+```bash
+npm link
+```
+
+And run the link command in *this* stencil project
+
+```bash
+npm link @stencil/core
+```
